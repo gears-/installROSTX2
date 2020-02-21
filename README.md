@@ -3,11 +3,11 @@ Install Robot Operating System (ROS) on NVIDIA Jetson TX2
 
 These scripts will install Robot Operating System (ROS) on the NVIDIA Jetson TX2 development kit.
 
-For L4T 28.2 (JetPack 3.2)
+For L4T 32.3.1 (JetPack 4.3)
 
 See releases or tags for earlier versions.
 
-The script is based on the Ubuntu ARM install of ROS Kinetic: http://wiki.ros.org/kinetic/Installation/Ubuntu
+The script is based on the Ubuntu ARM install of ROS Kinetic: http://wiki.ros.org/melodic/Installation/Ubuntu
 
 Maintainer of ARM builds for ROS is http://answers.ros.org/users/1034/ahendrix/
 
@@ -19,16 +19,16 @@ Usage: ./installROS.sh  [[-p package] | [-h]]
  -p | --package &lt;packagename&gt;  ROS package to install
                                Multiple Usage allowed
                                The first package should be a base package. One of the following:
-                                 ros-kinetic-ros-base
-                                 ros-kinetic-desktop
-                                 ros-kinetic-desktop-full
+                                 ros-melodic-ros-base
+                                 ros-melodic-desktop
+                                 ros-melodic-desktop-full
  </pre>
  
-Default is ros-kinetic-ros-base if no packages are specified.
+Default is ros-melodic-ros-base if no packages are specified.
 
 Example Usage:
 
-$ ./installROS.sh -p ros-kinetic-desktop -p ros-kinetic-rgbd-launch
+$ ./installROS.sh -p ros-melodic-desktop -p ros-melodic-rgbd-launch
 
 This script installs a baseline ROS environment. There are several tasks:
 
@@ -36,13 +36,13 @@ This script installs a baseline ROS environment. There are several tasks:
 <li>Enable repositories universe, multiverse, and restricted</li>
 <li>Adds the ROS sources list</li>
 <li>Sets the needed keys</li>
-<li>Loads specified ROS packages, defaults to ros-kinetic-base-ros if none specified</li>
+<li>Loads specified ROS packages, defaults to ros-melodic-base-ros if none specified</li>
 <li>Initializes rosdep</li>
 </ul>
 
 You can edit this file to add the ROS packages for your application. 
 
-<strong>setupCatkinWorkspace.sh</strong>
+<strong>setupCatkinWorkspace.sh</strong2>
 Usage:
 
 $ ./setupCatkinWorkspace.sh [optionalWorkspaceName]
@@ -56,6 +56,9 @@ $ sudo apt-key del 421C365BD9FF1F717815A3895523BAEEB01FA116
 </pre> 
 
 ## Release Notes
+<strong>February 2020</strong>
+* L4T 32.3.1
+
 <strong>June 2019</strong>
 * L4T 28.2
 * Update GPG Key for ROS server
