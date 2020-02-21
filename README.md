@@ -24,7 +24,7 @@ Usage: ./installROS.sh  [[-p package] | [-h]]
                                  ros-melodic-desktop-full
  </pre>
  
-Default is ros-melodic-ros-base if no packages are specified.
+Default is ros-melodic-ros-desktop-full if no packages are specified.
 
 Example Usage:
 
