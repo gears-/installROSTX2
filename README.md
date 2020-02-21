@@ -7,7 +7,7 @@ For L4T 32.3.1 (JetPack 4.3)
 
 See releases or tags for earlier versions.
 
-The script is based on the Ubuntu ARM install of ROS Kinetic: http://wiki.ros.org/melodic/Installation/Ubuntu
+The script is based on the Ubuntu ARM install of ROS Melodic: http://wiki.ros.org/melodic/Installation/Ubuntu
 
 Maintainer of ARM builds for ROS is http://answers.ros.org/users/1034/ahendrix/
 
